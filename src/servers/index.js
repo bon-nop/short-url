@@ -20,7 +20,7 @@ function generateShortCode() {
 }
 
 
-app.post('/shorten', (req, res) => {
+app.post('shorten', (req, res) => {
   const originalUrl = req.body.originalUrl;
   const shortCode = generateShortCode();
   
@@ -34,7 +34,7 @@ app.post('/shorten', (req, res) => {
   });
 });
 
-app.get('/:shortCode', (req, res) => {
+app.get(':shortCode', (req, res) => {
   const shortCode = req.params.shortCode;
   const selectQuery = `SELECT originalUrl FROM urls WHERE shortCode = ?`;
   db.get(selectQuery, [shortCode], (err, row) => {
@@ -56,7 +56,7 @@ app.get('/:shortCode', (req, res) => {
   });
 });
 
-app.get('/qrcode/:shortCode', async (req, res) => {
+app.get('qrcode/:shortCode', async (req, res) => {
   const shortCode = req.params.shortCode;
   const selectQuery = `SELECT originalUrl FROM urls WHERE shortCode = ?`;
 
