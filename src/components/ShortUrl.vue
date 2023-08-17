@@ -2,7 +2,7 @@
 import axios from 'axios';
 import QRCode from 'qrcode-generator';
 
-const backendURL = 'https://bon-nop.github.io/short-url/';
+const backendURL = 'https://bon-nop.github.io/short-url';
 
 export default {
   data() {
