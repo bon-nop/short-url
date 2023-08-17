@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import ShortUrl from './components/ShortUrl.vue';
 </script>
 
@@ -12,7 +11,6 @@ import ShortUrl from './components/ShortUrl.vue';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
   <ShortUrl />
 </template>
 
