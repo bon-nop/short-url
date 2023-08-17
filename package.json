@@ -1,0 +1,29 @@
+{
+  "name": "short-url",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.1",
+    "bootstrap-vue": "^2.23.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nanoid": "^4.0.2",
+    "nodemon": "^3.0.1",
+    "qrcode": "^1.5.3",
+    "qrcode-generator": "^1.4.4",
+    "sqlite3": "^5.1.6",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}
